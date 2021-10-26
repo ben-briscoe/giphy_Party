@@ -41,7 +41,7 @@ async function getGif(query) {
     //try for errors
     try {
         //collects json response for get request. Parameters to retrieve 1 gif only rated G and in english. also set to retrieve random one each time same search term is passed.
-        const response = await axios.get('http://api.giphy.com/v1/gifs/search', 
+        const response = await axios.get('https://api.giphy.com/v1/gifs/search', 
                                     {params: {
                                         q:query,
                                         api_key: '07U5ZVm85VhLsFvQSarJkzzTAoVDAHsc', 
